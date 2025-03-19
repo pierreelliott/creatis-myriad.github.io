@@ -21,6 +21,8 @@ content:
         type: string
         default: review
         hidden: true
+      - name: date
+        type: date
       - name: title
         label: Title of your post
         type: string
