@@ -25,7 +25,6 @@ content:
       - name: tags
         label: Keywords
         type: string
-        list: true
         required: true
       - name: author
         label: Author of the post
