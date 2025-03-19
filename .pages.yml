@@ -1,0 +1,51 @@
+media:
+  input: collections/images
+  output: /collections/images
+  path: collections/images
+  categories: [image, video]
+content:
+  - name: homepage
+    label: Home page
+    type: file
+    path: index.markdown
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/collections/_posts
+    subfolders: false
+    fields:
+      - name: layout
+        type: string
+        default: review
+        hidden: true
+      - name: title
+        label: Title of your post
+        type: text
+        required: true
+      - name: tags
+        type: string
+        list: true
+        required: true
+      - name: author
+        type: string
+        required: true
+      - name: cite
+        type: object
+        required: true
+        fields:
+          - name: title
+            label: Title of the paper
+            type: text
+            required: true
+          - name: authors
+            type: string
+            required: true
+          - name: venue
+            label: Name of the conference/journal
+            type: string
+            required: true
+      - name: pdf
+        label: Link to the open access pdf version
+        type: string
+        required: true
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
