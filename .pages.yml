@@ -14,7 +14,8 @@ content:
     path: collections/_posts
     subfolders: false
     view:
-      fields: [ cover, title ]
+      fields: [ title, date ]
+      sort: [ date, title ]
     fields:
       - name: layout
         type: string
