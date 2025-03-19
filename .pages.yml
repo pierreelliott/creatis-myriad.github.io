@@ -14,8 +14,8 @@ content:
     path: collections/_posts
     subfolders: false
     view:
-      fields: [ title, date ]
-      sort: [ date, title ]
+      fields: [ title, date, author ]
+      sort: [ date, title, author ]
     fields:
       - name: layout
         type: string
