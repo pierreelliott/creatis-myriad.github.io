@@ -23,7 +23,7 @@ content:
         hidden: true
       - name: date
         type: date
-        default: now
+        hidden: true
       - name: title
         label: Title of your post
         type: string
