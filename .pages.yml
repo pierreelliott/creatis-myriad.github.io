@@ -34,7 +34,6 @@ content:
       - name: cite
         label: Citation details
         type: object
-        required: true
         fields:
           - name: title
             label: Title of the paper
