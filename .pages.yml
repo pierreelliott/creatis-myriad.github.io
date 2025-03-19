@@ -11,7 +11,7 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: src/collections/_posts
+    path: collections/_posts
     subfolders: false
     fields:
       - name: layout
