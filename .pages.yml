@@ -13,6 +13,8 @@ content:
     type: collection
     path: collections/_posts
     subfolders: false
+    view:
+      fields: [ cover, title ]
     fields:
       - name: layout
         type: string
