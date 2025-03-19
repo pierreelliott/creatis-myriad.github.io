@@ -20,16 +20,19 @@ content:
         hidden: true
       - name: title
         label: Title of your post
-        type: text
+        type: string
         required: true
       - name: tags
+        label: Keywords
         type: string
         list: true
         required: true
       - name: author
+        label: Author of the post
         type: string
         required: true
       - name: cite
+        label: Citation details
         type: object
         required: true
         fields:
@@ -38,6 +41,7 @@ content:
             type: text
             required: true
           - name: authors
+            label: Authors of the paper
             type: string
             required: true
           - name: venue
