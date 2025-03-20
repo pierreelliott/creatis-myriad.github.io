@@ -42,7 +42,7 @@ content:
         fields:
           - name: title
             label: Title of the paper
-            type: text
+            type: string
             required: true
           - name: authors
             label: Authors of the paper
